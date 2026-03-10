@@ -1,0 +1,56 @@
+body{
+font-family:Arial;
+background:#f4f4f4;
+margin:0;
+}
+
+/* HEADER */
+
+.topo{
+background:#ff914d;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* CONTAINER */
+
+.pedidos-container{
+width:80%;
+margin:40px auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+/* CARD */
+
+.pedido-card{
+background:white;
+padding:20px;
+width:260px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.pedido-card h3{
+margin-top:0;
+}
+
+/* BOTÃO */
+
+button{
+background:#ff914d;
+border:none;
+padding:12px;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+width:100%;
+}
+
+button:hover{
+background:#ff7a26;
+}
