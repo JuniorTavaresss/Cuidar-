@@ -126,3 +126,17 @@ text-align:center;
 padding:20px;
 margin-top:40px;
 }
+.logo-link{
+text-decoration:none;
+color:white;
+}
+
+.logo-link h1{
+font-size:28px;
+transition:0.3s;
+}
+
+.logo-link h1:hover{
+transform:scale(1.05);
+opacity:0.9;
+}
