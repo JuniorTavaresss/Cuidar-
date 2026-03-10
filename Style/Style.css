@@ -1,82 +1,128 @@
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 font-family:Arial, Helvetica, sans-serif;
-background:#f5f7fb;
+background:#f4f7fb;
+color:#333;
 }
 
 /* HEADER */
 
-header{
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
 background:#2b7cff;
 color:white;
-padding:20px;
-text-align:center;
+flex-wrap:wrap;
 }
 
-nav{
-margin-top:10px;
-}
-
-nav a{
+.menu a{
 color:white;
-margin:0 15px;
+margin-left:20px;
 text-decoration:none;
 font-weight:bold;
+transition:0.3s;
+}
+
+.menu a:hover{
+opacity:0.7;
 }
 
 /* HERO */
 
 .hero{
-background:#e8f0ff;
+padding:80px 20px;
 text-align:center;
-padding:60px 20px;
+background:linear-gradient(#e8f0ff,#ffffff);
+}
+
+.hero-text{
+max-width:700px;
+margin:auto;
 }
 
 .hero h1{
-font-size:40px;
+font-size:38px;
+margin-bottom:20px;
 }
 
 .hero p{
-max-width:700px;
-margin:auto;
 font-size:18px;
+margin-bottom:30px;
 }
 
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+/* BOTÕES */
+
 .btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
+padding:14px 28px;
 background:#2b7cff;
 color:white;
-border-radius:6px;
 text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#1a5ed8;
 }
 
 /* SECTIONS */
 
 .section{
-padding:50px 20px;
+padding:60px 20px;
 text-align:center;
 }
 
+.section h2{
+margin-bottom:30px;
+font-size:28px;
+}
+
+/* CARDS */
+
 .cards{
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
+flex-wrap:wrap;
 gap:25px;
-margin-top:30px;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:10px;
+border-radius:12px;
 width:260px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
 color:#2b7cff;
+margin-bottom:10px;
+}
+
+/* ADOÇÃO */
+
+.adoption{
+background:#f0f6ff;
 }
 
 /* FOOTER */
