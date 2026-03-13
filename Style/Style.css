@@ -11,13 +11,12 @@ color:#333;
 }
 
 /* HEADER */
-
 .header{
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 60px;
-background:#2b7cff;
+background:#6A1B9A;
 color:white;
 flex-wrap:wrap;
 }
@@ -35,7 +34,6 @@ opacity:0.9;
 }
 
 /* MENU */
-
 .menu{
 display:flex;
 gap:25px;
@@ -53,7 +51,6 @@ opacity:0.7;
 }
 
 /* HERO */
-
 .hero{
 padding:90px 20px;
 text-align:center;
@@ -76,7 +73,6 @@ margin-bottom:35px;
 }
 
 /* BOTÕES */
-
 .hero-buttons{
 display:flex;
 justify-content:center;
@@ -86,7 +82,7 @@ flex-wrap:wrap;
 
 .btn{
 padding:14px 30px;
-background:#2b7cff;
+background:#8A2BE2; /* Roxo principal */
 color:white;
 text-decoration:none;
 border-radius:8px;
@@ -95,19 +91,18 @@ transition:0.3s;
 }
 
 .btn:hover{
-background:#1a5ed8;
+background:#6A1B9A; /* Roxo mais escuro no hover */
 }
 
 .btn-sec{
-background:#f59e0b;
+background:#8A2BE2; /* Botão "ver pedidos" agora roxo ao invés de amarelo */
 }
 
 .btn-sec:hover{
-background:#d97706;
+background:#6A1B9A; /* Hover roxo escuro */
 }
 
 /* SECTIONS */
-
 .section{
 padding:70px 20px;
 text-align:center;
@@ -119,7 +114,6 @@ font-size:30px;
 }
 
 /* CARDS */
-
 .cards{
 display:flex;
 justify-content:center;
@@ -147,21 +141,29 @@ margin-bottom:12px;
 }
 
 /* ADOÇÃO */
-
 .adoption{
 background:#f0f6ff;
 }
 
-/* FOOTER */
-
-footer{
-background:#222;
+/* FOOTER SUPERIOR - ROXO */
+.footer-top{
+background:#8A2BE2;
 color:white;
 text-align:center;
 padding:25px;
 margin-top:40px;
 font-size:14px;
 }
+
+/* FOOTER INFERIOR - PRETO */
+footer{
+background:#222; /* Preto no rodapé debaixo */
+color:white;
+text-align:center;
+padding:25px;
+font-size:14px;
+}
+
 .logo-link{
 text-decoration:none;
 color:white;

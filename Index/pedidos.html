@@ -2,64 +2,158 @@
 <html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos | Cuida+</title>
+    <link rel="stylesheet" href="../Style/pedidos.css">
+    <style>
+        /* Estilos mínimos para garantir que o rodapé e botões fiquem corretos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<meta charset="UTF-8">
-<title>Pedidos | Cuida+</title>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-<link rel="stylesheet" href="../Style/pedidos.css">
+        .header {
+            background-color: #007bff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
 
+        .logo a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .logo p {
+            color: #fff;
+        }
+
+        .menu a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .pedidos-container {
+            flex: 1;
+            padding: 2rem 0 2rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .pedido-card {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 0.8rem;
+            width: 180px;
+            height: 180px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pedido-card h3 {
+            margin-bottom: 0.4rem;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .pedido-card p {
+            margin: 0.2rem 0;
+            font-size: 0.8rem;
+        }
+
+        .pedido-card button {
+            margin-top: auto;
+            padding: 0.3rem 0.5rem;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 0.8rem;
+        }
+
+        .pedido-card button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 1rem;
+            border-top: 1px solid #ddd;
+            margin-top: auto;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
 
-<header class="topo">
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html" class="btn-voltar">🐶 Cuida+</a>
+            <p>Conectando tutores a cuidadores de cães</p>
+        </div>
+        <nav class="menu">
+            <a href="Inicio.html">Início</a>
+            <a href="cuidadores.html">Cuidadores</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="adocao.html">Adoção</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="cadastro.html">Cadastro</a>
+        </nav>
+    </header>
 
-<h1>🐶 Pedidos de Serviços</h1>
-<p>Escolha um pedido disponível para cuidar de um pet</p>
+    <section class="pedidos-container">
+        <div class="pedido-card">
+            <h3>Passear com cachorro</h3>
+            <p><strong>Cidade:</strong> São Paulo</p>
+            <p><strong>Pagamento:</strong> R$50</p>
+            <p><strong>Horário:</strong> 08:00 - 10:00</p>
+            <button>Quero esse serviço</button>
+        </div>
 
-</header>
+        <div class="pedido-card">
+            <h3>Hospedagem de cachorro</h3>
+            <p><strong>Cidade:</strong> Rio de Janeiro</p>
+            <p><strong>Pagamento:</strong> R$120</p>
+            <p><strong>Duração:</strong> 2 dias</p>
+            <button>Quero esse serviço</button>
+        </div>
 
-<section class="pedidos-container">
+        <div class="pedido-card">
+            <h3>Alimentar cachorro</h3>
+            <p><strong>Cidade:</strong> Curitiba</p>
+            <p><strong>Pagamento:</strong> R$40</p>
+            <p><strong>Horário:</strong> 18:00</p>
+            <button>Quero esse serviço</button>
+        </div>
+    </section>
 
-<div class="pedido-card">
-
-<h3>Passear com cachorro</h3>
-
-<p><strong>Cidade:</strong> São Paulo</p>
-<p><strong>Pagamento:</strong> R$50</p>
-<p><strong>Horário:</strong> 08:00 - 10:00</p>
-
-<button>Quero esse serviço</button>
-
-</div>
-
-
-<div class="pedido-card">
-
-<h3>Hospedagem de cachorro</h3>
-
-<p><strong>Cidade:</strong> Rio de Janeiro</p>
-<p><strong>Pagamento:</strong> R$120</p>
-<p><strong>Duração:</strong> 2 dias</p>
-
-<button>Quero esse serviço</button>
-
-</div>
-
-
-<div class="pedido-card">
-
-<h3>Alimentar cachorro</h3>
-
-<p><strong>Cidade:</strong> Curitiba</p>
-<p><strong>Pagamento:</strong> R$40</p>
-<p><strong>Horário:</strong> 18:00</p>
-
-<button>Quero esse serviço</button>
-
-</div>
-
-</section>
+    <footer>
+        <p>© 2026 Cuida+ - Plataforma de cuidados caninos</p>
+    </footer>
 
 </body>
+
 </html>

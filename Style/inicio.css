@@ -57,7 +57,7 @@ margin-bottom:20px;
 /* BOTÕES */
 
 .btn{
-background:#2b7cff;
+background:#6A1B9A;
 color:white;
 border:none;
 padding:12px 25px;
@@ -141,81 +141,3 @@ transform:scale(1.05);
 opacity:0.9;
 }
 
-/* ========= BOTÕES PADRÃO ========= */
-.botoes {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  margin-top: 24px;
-}
-
-/* Estilo visual do botão usado em Inicio.html (classe "btn") */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 22px;
-  background: linear-gradient(90deg, #6a0dad 0%, #8b3bdc 100%);
-  color: #ffffff;
-  text-decoration: none;      /* para <a> */
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  border-radius: 10px;
-  border: none;               /* caso seja <button> */
-  box-shadow: 0 8px 20px rgba(106, 13, 173, 0.18);
-  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
-  cursor: pointer;
-}
-
-/* Emoji/ícone fixo no começo do botão */
-.btn::before {
-  content: "🐶";
-  font-size: 18px;
-  line-height: 1;
-  display: inline-block;
-}
-
-/* Hover / active */
-.btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(106, 13, 173, 0.22);
-  opacity: 0.98;
-}
-.btn:active {
-  transform: translateY(-2px);
-}
-
-/* Responsivo: empilha em telas pequenas */
-@media (max-width: 520px) {
-  .botoes {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 0 20px;
-  }
-  .btn { justify-content: center; width: 100%; }
-}
-
-/* ========= RODAPÉ PADRÃO ========= */
-footer.footer {
-  background: #6a0dad;        /* cor padrão roxa */
-  color: #ffffff;
-  padding: 18px 12px;
-  text-align: center;
-  font-weight: 500;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
-  margin-top: 30px;
-}
-
-/* Ajuste do parágrafo dentro do footer */
-footer.footer p {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-}
-
-/* Se quiser links no footer */
-footer.footer a {
-  color: rgba(255,255,255,0.95);
-  text-decoration: none;
-}
-footer.footer a:hover { text-decoration: underline; }
